@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <style>
+    :root{
+      --main-yellow:hsl(47, 88%, 63%);
+      --text-color: hsl(0, 0%, 7%);
+      --card-bg: hsl(0, 0%, 100%);
+      --secondary-text-color: hsl(0, 0%, 42%);
+    }
+
+    body{
+      font-family: figtree;
+      background-color: var(--main-yellow);
+    }
+
+    .content-section{
+      height: 95vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .blog-preview-card{
+      width: 300px;
+      height: 450px;
+      background-color: var(--card-bg);
+      border: 1px solid black;
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 5px 5px 0 black;
+      transition: 0.3s;
+    }
+
+    .blog-preview-card:hover{
+      transform: translatey(-5px);
+    }
+
+    .illustration{
+      width: 300px;
+      border-radius: 8px;
+    }
+
+    .text-section{
+      width: 100%;
+      font-size: 16px;
+    }
+
+    .info{
+      background-color: var(--main-yellow);
+      border: none;
+      border-radius: 2px;
+      height: 30px;
+      font-weight: 900;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+
+    .info:hover{
+      background-color: yellow;
+    }
+
+    .date{
+      font-weight: 500;
+      color: var(--text-color);
+    }
+
+    .interactive-text{
+      font-weight: 900;
+      font-size: 20px;
+      text-decoration: none;
+      list-style: none;
+      cursor: pointer;
+      color: var(--text-color);
+    }
+
+    .interactive-text:active{
+      color: var(--main-yellow);
+    }
+
+    .description{
+      color: var(--secondary-text-color);
+    }
+    
+    .profile-section{
+      height: 30px;
+      display: grid;
+      grid-template-columns: 30px 1fr;
+    }
+
+    .profile-image{
+      width: 30px;
+    }
+
+    .profile-name{
+      height: 30px;
+      font-weight: 700;
+      margin: 0;
+      margin-left: 10px;
+      padding-top: 5px;
+    }
+
+    .attribution { font-size: 0.6875rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <section class="content-section">
+    <div class="blog-preview-card">
+      <img class="illustration" src="./assets/images/illustration-article.svg">
+      <div class="text-section">
+        <button class="info">Learning</button>
+        <p class="date">Published 21 Dec 2023</p>
+        <li class="interactive-text"><a>
+          HTML & CSS foundations
+        </a></li>
+        <p class="description">
+          These languages are the backbone of every website, defining structure, content, and presentation.
+        </p>
+      </div>
+      <div class="profile-section">
+        <img class="profile-image" src="./assets/images/image-avatar.webp">
+        <p class="profile-name">Greg Hooper</p>
+      </div>
+    </div>
+  </section>
+
+  
+
+  
+
+  
+
+  
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">smash702</a>.
+  </footer>
+</body>
+</html>
