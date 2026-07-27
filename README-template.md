@@ -24,7 +24,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/smash702/blog-preview-solution]
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [ https://smash702.github.io/blog-preview-solution/]
 
 ## My process
   I created and arrenged the elements using the HTML hen proceeded to style them one by one using CSS
